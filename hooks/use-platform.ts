@@ -7,7 +7,7 @@ export function useModKey() {
   return useSyncExternalStore(
     subscribe,
     () =>
-      /Mac|iPhone|iPad/i.test(navigator.platform || navigator.userAgent) ? "⌘" : "Ctrl",
+      /Mac|iPhone|iPad/i.test(navigator.platform || navigator.userAgent) ? "⌘" : "⌘",
     () => "⌘",
   );
 }

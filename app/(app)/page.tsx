@@ -27,7 +27,7 @@ export default async function HomePage({
         bookmarks,
         currentGroupId,
         query: (q ?? "").slice(0, 200),
-        page: Math.max(1, Math.min(Number.parseInt(page ?? "1", 10) || 1, 10_000)),
+        page: Math.max(1, Math.min(Number.parseInt(page ?? "1", 20) || 1, 10_000)),
       }}
     >
       <Dashboard />
