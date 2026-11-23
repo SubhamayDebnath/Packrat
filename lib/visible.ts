@@ -1,6 +1,6 @@
 import type { Bookmark, Group } from "@/types";
 
-export const PAGE_SIZE = 10;
+export const PAGE_SIZE = 20;
 
 /** Without a query: the current group. With a query: every group, each word matching title, link or group name. */
 export function filterBookmarks(
